@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C379D4A615900B9800F20ED5 /* OnePair.m in Sources */ = {isa = PBXBuildFile; fileRef = C379D4A515900B9800F20ED5 /* OnePair.m */; };
+		C37B5D96157922910052F51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5D95157922910052F51D /* UIKit.framework */; };
+		C37B5D98157922910052F51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5D97157922910052F51D /* Foundation.framework */; };
+		C37B5D9A157922910052F51D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5D99157922910052F51D /* CoreGraphics.framework */; };
+		C37B5DA6157922910052F51D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DA5157922910052F51D /* AppDelegate.m */; };
+		C37B5DA9157922910052F51D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DA7157922910052F51D /* MainStoryboard.storyboard */; };
+		C37B5DAC157922910052F51D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DAB157922910052F51D /* FirstViewController.m */; };
+		C37B5DAE157922920052F51D /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DAD157922920052F51D /* first.png */; };
+		C37B5DB0157922920052F51D /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DAF157922920052F51D /* first@2x.png */; };
+		C37B5DB3157922920052F51D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DB2157922920052F51D /* SecondViewController.m */; };
+		C37B5DB5157922920052F51D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DB4157922920052F51D /* second.png */; };
+		C37B5DB7157922920052F51D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DB6157922920052F51D /* second@2x.png */; };
+		C37B5DBF157922920052F51D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5DBE157922920052F51D /* SenTestingKit.framework */; };
+		C37B5DC0157922920052F51D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5D95157922910052F51D /* UIKit.framework */; };
+		C37B5DC1157922920052F51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B5D97157922910052F51D /* Foundation.framework */; };
+		C37B5DC9157922920052F51D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C37B5DC7157922920052F51D /* InfoPlist.strings */; };
+		C37B5DCA1594010500CEFA74 /* TwoPair.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DC91594010500CEFA74 /* TwoPair.m */; };
+		C37B5DCC157922920052F51D /* LiarsPokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DCB157922920052F51D /* LiarsPokerTests.m */; };
+		C37B5DCE15942B5A00CEFA74 /* ThreeOfAKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DCD15942B5A00CEFA74 /* ThreeOfAKind.m */; };
+		C37B5DD115942CEE00CEFA74 /* Straight.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DD015942CEE00CEFA74 /* Straight.m */; };
+		C37B5DD415942FE900CEFA74 /* Flush.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DD315942FE900CEFA74 /* Flush.m */; };
+		C37B5DD7157923850052F51D /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DD6157923850052F51D /* Card.m */; };
+		C37B5DD71594321700CEFA74 /* FullHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = C37B5DD61594321700CEFA74 /* FullHouse.m */; };
+		C3804F34157C422000769C45 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C3804F33157C422000769C45 /* Player.m */; };
+		C38346A91598BFB00013F479 /* FourOfAKind.m in Sources */ = {isa = PBXBuildFile; fileRef = C38346A81598BFAF0013F479 /* FourOfAKind.m */; };
+		C38346AD1598C1540013F479 /* StraightFlush.m in Sources */ = {isa = PBXBuildFile; fileRef = C38346AC1598C1540013F479 /* StraightFlush.m */; };
+		C38346B01598C37A0013F479 /* LiarsPokerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C38346AF1598C37A0013F479 /* LiarsPokerModel.m */; };
+		C38CA2A415A7BC9400C36086 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = C38CA2A315A7BC9400C36086 /* Deck.m */; };
+		C38F4D65158BE433006F8B76 /* LinkedStack.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F4D64158BE433006F8B76 /* LinkedStack.m */; };
+		C38F4D6B158C0D10006F8B76 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F4D6A158C0D10006F8B76 /* Node.m */; };
+		C38F4D74158C2C53006F8B76 /* HighCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C38F4D73158C2C53006F8B76 /* HighCard.m */; };
+		C3E50E1115B7ABE000F71BB4 /* CardPool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E50E1015B7ABE000F71BB4 /* CardPool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C37B5DC2157922920052F51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C37B5D88157922910052F51D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C37B5D90157922910052F51D;
+			remoteInfo = LiarsPoker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C37947BD15A8B1CA009A40D9 /* PlaceBetProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlaceBetProtocol.h; path = LiarsPoker/PlaceBetProtocol.h; sourceTree = "<group>"; };
+		C37947BE15A8B213009A40D9 /* CallBetProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallBetProtocol.h; path = LiarsPoker/CallBetProtocol.h; sourceTree = "<group>"; };
+		C37947BF15A8B30D009A40D9 /* NewGameProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewGameProtocol.h; path = LiarsPoker/NewGameProtocol.h; sourceTree = "<group>"; };
+		C379D4A415900B9800F20ED5 /* OnePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnePair.h; path = LiarsPoker/OnePair.h; sourceTree = "<group>"; };
+		C379D4A515900B9800F20ED5 /* OnePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnePair.m; path = LiarsPoker/OnePair.m; sourceTree = "<group>"; };
+		C37B5D91157922910052F51D /* LiarsPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiarsPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37B5D95157922910052F51D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C37B5D97157922910052F51D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C37B5D99157922910052F51D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C37B5DA4157922910052F51D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C37B5DA5157922910052F51D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C37B5DA8157922910052F51D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C37B5DAA157922910052F51D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C37B5DAB157922910052F51D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C37B5DAD157922920052F51D /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		C37B5DAF157922920052F51D /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		C37B5DB1157922920052F51D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C37B5DB2157922920052F51D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C37B5DB4157922920052F51D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		C37B5DB6157922920052F51D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		C37B5DBD157922920052F51D /* LiarsPokerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiarsPokerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37B5DBE157922920052F51D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C37B5DC6157922920052F51D /* LiarsPokerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiarsPokerTests-Info.plist"; sourceTree = "<group>"; };
+		C37B5DC8157922920052F51D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C37B5DC81594010500CEFA74 /* TwoPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwoPair.h; path = LiarsPoker/TwoPair.h; sourceTree = "<group>"; };
+		C37B5DC91594010500CEFA74 /* TwoPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwoPair.m; path = LiarsPoker/TwoPair.m; sourceTree = "<group>"; };
+		C37B5DCA157922920052F51D /* LiarsPokerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiarsPokerTests.h; sourceTree = "<group>"; };
+		C37B5DCB157922920052F51D /* LiarsPokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiarsPokerTests.m; sourceTree = "<group>"; };
+		C37B5DCC15942B5A00CEFA74 /* ThreeOfAKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeOfAKind.h; path = LiarsPoker/ThreeOfAKind.h; sourceTree = "<group>"; };
+		C37B5DCD15942B5A00CEFA74 /* ThreeOfAKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreeOfAKind.m; path = LiarsPoker/ThreeOfAKind.m; sourceTree = "<group>"; };
+		C37B5DCF15942CEE00CEFA74 /* Straight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Straight.h; path = LiarsPoker/Straight.h; sourceTree = "<group>"; };
+		C37B5DD015942CEE00CEFA74 /* Straight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Straight.m; path = LiarsPoker/Straight.m; sourceTree = "<group>"; };
+		C37B5DD215942FE900CEFA74 /* Flush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flush.h; path = LiarsPoker/Flush.h; sourceTree = "<group>"; };
+		C37B5DD315942FE900CEFA74 /* Flush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flush.m; path = LiarsPoker/Flush.m; sourceTree = "<group>"; };
+		C37B5DD5157923850052F51D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = LiarsPoker/Card.h; sourceTree = "<group>"; };
+		C37B5DD51594321700CEFA74 /* FullHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FullHouse.h; path = LiarsPoker/FullHouse.h; sourceTree = "<group>"; };
+		C37B5DD6157923850052F51D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = LiarsPoker/Card.m; sourceTree = "<group>"; };
+		C37B5DD61594321700CEFA74 /* FullHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FullHouse.m; path = LiarsPoker/FullHouse.m; sourceTree = "<group>"; };
+		C3804F32157C422000769C45 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = LiarsPoker/Player.h; sourceTree = "<group>"; };
+		C3804F33157C422000769C45 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = LiarsPoker/Player.m; sourceTree = "<group>"; };
+		C38346A71598BFAF0013F479 /* FourOfAKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FourOfAKind.h; path = LiarsPoker/FourOfAKind.h; sourceTree = "<group>"; };
+		C38346A81598BFAF0013F479 /* FourOfAKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FourOfAKind.m; path = LiarsPoker/FourOfAKind.m; sourceTree = "<group>"; };
+		C38346AB1598C1540013F479 /* StraightFlush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StraightFlush.h; path = LiarsPoker/StraightFlush.h; sourceTree = "<group>"; };
+		C38346AC1598C1540013F479 /* StraightFlush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StraightFlush.m; path = LiarsPoker/StraightFlush.m; sourceTree = "<group>"; };
+		C38346AE1598C37A0013F479 /* LiarsPokerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiarsPokerModel.h; path = LiarsPoker/LiarsPokerModel.h; sourceTree = "<group>"; };
+		C38346AF1598C37A0013F479 /* LiarsPokerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiarsPokerModel.m; path = LiarsPoker/LiarsPokerModel.m; sourceTree = "<group>"; };
+		C3864EE315A9453C004057EB /* CreateHandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreateHandProtocol.h; path = LiarsPoker/CreateHandProtocol.h; sourceTree = "<group>"; };
+		C38CA2A215A7BC9400C36086 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = LiarsPoker/Deck.h; sourceTree = "<group>"; };
+		C38CA2A315A7BC9400C36086 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = LiarsPoker/Deck.m; sourceTree = "<group>"; };
+		C38F4D62158BE11E006F8B76 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = LiarsPoker/Stack.h; sourceTree = "<group>"; };
+		C38F4D63158BE433006F8B76 /* LinkedStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkedStack.h; path = LiarsPoker/LinkedStack.h; sourceTree = "<group>"; };
+		C38F4D64158BE433006F8B76 /* LinkedStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkedStack.m; path = LiarsPoker/LinkedStack.m; sourceTree = "<group>"; };
+		C38F4D69158C0D10006F8B76 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = LiarsPoker/Node.h; sourceTree = "<group>"; };
+		C38F4D6A158C0D10006F8B76 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = LiarsPoker/Node.m; sourceTree = "<group>"; };
+		C38F4D6D158C28DC006F8B76 /* Hand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Hand.h; path = LiarsPoker/Hand.h; sourceTree = "<group>"; };
+		C38F4D72158C2C53006F8B76 /* HighCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighCard.h; path = LiarsPoker/HighCard.h; sourceTree = "<group>"; };
+		C38F4D73158C2C53006F8B76 /* HighCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighCard.m; path = LiarsPoker/HighCard.m; sourceTree = "<group>"; };
+		C3E50E0F15B7ABE000F71BB4 /* CardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardPool.h; path = LiarsPoker/CardPool.h; sourceTree = "<group>"; };
+		C3E50E1015B7ABE000F71BB4 /* CardPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardPool.m; path = LiarsPoker/CardPool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C37B5D8E157922910052F51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5D96157922910052F51D /* UIKit.framework in Frameworks */,
+				C37B5D98157922910052F51D /* Foundation.framework in Frameworks */,
+				C37B5D9A157922910052F51D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37B5DB9157922920052F51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5DBF157922920052F51D /* SenTestingKit.framework in Frameworks */,
+				C37B5DC0157922920052F51D /* UIKit.framework in Frameworks */,
+				C37B5DC1157922920052F51D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C37947BC15A8B143009A40D9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C37947BD15A8B1CA009A40D9 /* PlaceBetProtocol.h */,
+				C37947BE15A8B213009A40D9 /* CallBetProtocol.h */,
+				C37947BF15A8B30D009A40D9 /* NewGameProtocol.h */,
+				C3864EE315A9453C004057EB /* CreateHandProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C37B5D86157922910052F51D = {
+			isa = PBXGroup;
+			children = (
+				C38F4D6C158C28A9006F8B76 /* Hands */,
+				C38F4D60158BE05B006F8B76 /* Data Structures */,
+				C37947BC15A8B143009A40D9 /* Protocols */,
+				C37B5DDB157934360052F51D /* Model */,
+				C37B5D9B157922910052F51D /* LiarsPoker */,
+				C37B5DC4157922920052F51D /* LiarsPokerTests */,
+				C37B5D94157922910052F51D /* Frameworks */,
+				C37B5D92157922910052F51D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C37B5D92157922910052F51D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5D91157922910052F51D /* LiarsPoker.app */,
+				C37B5DBD157922920052F51D /* LiarsPokerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C37B5D94157922910052F51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5D95157922910052F51D /* UIKit.framework */,
+				C37B5D97157922910052F51D /* Foundation.framework */,
+				C37B5D99157922910052F51D /* CoreGraphics.framework */,
+				C37B5DBE157922920052F51D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C37B5D9B157922910052F51D /* LiarsPoker */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5DA4157922910052F51D /* AppDelegate.h */,
+				C37B5DA5157922910052F51D /* AppDelegate.m */,
+				C37B5DA7157922910052F51D /* MainStoryboard.storyboard */,
+				C37B5DAA157922910052F51D /* FirstViewController.h */,
+				C37B5DAB157922910052F51D /* FirstViewController.m */,
+				C37B5DAD157922920052F51D /* first.png */,
+				C37B5DAF157922920052F51D /* first@2x.png */,
+				C37B5DB1157922920052F51D /* SecondViewController.h */,
+				C37B5DB2157922920052F51D /* SecondViewController.m */,
+				C37B5DB4157922920052F51D /* second.png */,
+				C37B5DB6157922920052F51D /* second@2x.png */,
+			);
+			path = LiarsPoker;
+			sourceTree = "<group>";
+		};
+		C37B5DC4157922920052F51D /* LiarsPokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5DCA157922920052F51D /* LiarsPokerTests.h */,
+				C37B5DCB157922920052F51D /* LiarsPokerTests.m */,
+				C37B5DC5157922920052F51D /* Supporting Files */,
+			);
+			path = LiarsPokerTests;
+			sourceTree = "<group>";
+		};
+		C37B5DC5157922920052F51D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5DC6157922920052F51D /* LiarsPokerTests-Info.plist */,
+				C37B5DC7157922920052F51D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C37B5DDB157934360052F51D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C37B5DD6157923850052F51D /* Card.m */,
+				C37B5DD5157923850052F51D /* Card.h */,
+				C3804F32157C422000769C45 /* Player.h */,
+				C3804F33157C422000769C45 /* Player.m */,
+				C38346AE1598C37A0013F479 /* LiarsPokerModel.h */,
+				C38346AF1598C37A0013F479 /* LiarsPokerModel.m */,
+				C38CA2A215A7BC9400C36086 /* Deck.h */,
+				C38CA2A315A7BC9400C36086 /* Deck.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C38F4D60158BE05B006F8B76 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C38F4D62158BE11E006F8B76 /* Stack.h */,
+				C38F4D63158BE433006F8B76 /* LinkedStack.h */,
+				C38F4D64158BE433006F8B76 /* LinkedStack.m */,
+				C38F4D69158C0D10006F8B76 /* Node.h */,
+				C38F4D6A158C0D10006F8B76 /* Node.m */,
+				C3E50E0F15B7ABE000F71BB4 /* CardPool.h */,
+				C3E50E1015B7ABE000F71BB4 /* CardPool.m */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		C38F4D6C158C28A9006F8B76 /* Hands */ = {
+			isa = PBXGroup;
+			children = (
+				C38F4D6D158C28DC006F8B76 /* Hand.h */,
+				C38F4D72158C2C53006F8B76 /* HighCard.h */,
+				C38F4D73158C2C53006F8B76 /* HighCard.m */,
+				C379D4A415900B9800F20ED5 /* OnePair.h */,
+				C379D4A515900B9800F20ED5 /* OnePair.m */,
+				C37B5DC81594010500CEFA74 /* TwoPair.h */,
+				C37B5DC91594010500CEFA74 /* TwoPair.m */,
+				C37B5DCC15942B5A00CEFA74 /* ThreeOfAKind.h */,
+				C37B5DCD15942B5A00CEFA74 /* ThreeOfAKind.m */,
+				C37B5DCF15942CEE00CEFA74 /* Straight.h */,
+				C37B5DD015942CEE00CEFA74 /* Straight.m */,
+				C37B5DD215942FE900CEFA74 /* Flush.h */,
+				C37B5DD315942FE900CEFA74 /* Flush.m */,
+				C37B5DD51594321700CEFA74 /* FullHouse.h */,
+				C37B5DD61594321700CEFA74 /* FullHouse.m */,
+				C38346A71598BFAF0013F479 /* FourOfAKind.h */,
+				C38346A81598BFAF0013F479 /* FourOfAKind.m */,
+				C38346AB1598C1540013F479 /* StraightFlush.h */,
+				C38346AC1598C1540013F479 /* StraightFlush.m */,
+			);
+			name = Hands;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C37B5D90157922910052F51D /* LiarsPoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37B5DCF157922920052F51D /* Build configuration list for PBXNativeTarget "LiarsPoker" */;
+			buildPhases = (
+				C37B5D8D157922910052F51D /* Sources */,
+				C37B5D8E157922910052F51D /* Frameworks */,
+				C37B5D8F157922910052F51D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiarsPoker;
+			productName = LiarsPoker;
+			productReference = C37B5D91157922910052F51D /* LiarsPoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C37B5DBC157922920052F51D /* LiarsPokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37B5DD2157922920052F51D /* Build configuration list for PBXNativeTarget "LiarsPokerTests" */;
+			buildPhases = (
+				C37B5DB8157922920052F51D /* Sources */,
+				C37B5DB9157922920052F51D /* Frameworks */,
+				C37B5DBA157922920052F51D /* Resources */,
+				C37B5DBB157922920052F51D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C37B5DC3157922920052F51D /* PBXTargetDependency */,
+			);
+			name = LiarsPokerTests;
+			productName = LiarsPokerTests;
+			productReference = C37B5DBD157922920052F51D /* LiarsPokerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C37B5D88157922910052F51D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Edeesis Productions";
+			};
+			buildConfigurationList = C37B5D8B157922910052F51D /* Build configuration list for PBXProject "LiarsPoker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C37B5D86157922910052F51D;
+			productRefGroup = C37B5D92157922910052F51D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C37B5D90157922910052F51D /* LiarsPoker */,
+				C37B5DBC157922920052F51D /* LiarsPokerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C37B5D8F157922910052F51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5DA9157922910052F51D /* MainStoryboard.storyboard in Resources */,
+				C37B5DAE157922920052F51D /* first.png in Resources */,
+				C37B5DB0157922920052F51D /* first@2x.png in Resources */,
+				C37B5DB5157922920052F51D /* second.png in Resources */,
+				C37B5DB7157922920052F51D /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37B5DBA157922920052F51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5DC9157922920052F51D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C37B5DBB157922920052F51D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C37B5D8D157922910052F51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5DA6157922910052F51D /* AppDelegate.m in Sources */,
+				C37B5DAC157922910052F51D /* FirstViewController.m in Sources */,
+				C37B5DB3157922920052F51D /* SecondViewController.m in Sources */,
+				C37B5DD7157923850052F51D /* Card.m in Sources */,
+				C3804F34157C422000769C45 /* Player.m in Sources */,
+				C38F4D65158BE433006F8B76 /* LinkedStack.m in Sources */,
+				C38F4D6B158C0D10006F8B76 /* Node.m in Sources */,
+				C38F4D74158C2C53006F8B76 /* HighCard.m in Sources */,
+				C379D4A615900B9800F20ED5 /* OnePair.m in Sources */,
+				C37B5DCA1594010500CEFA74 /* TwoPair.m in Sources */,
+				C37B5DCE15942B5A00CEFA74 /* ThreeOfAKind.m in Sources */,
+				C37B5DD115942CEE00CEFA74 /* Straight.m in Sources */,
+				C37B5DD415942FE900CEFA74 /* Flush.m in Sources */,
+				C37B5DD71594321700CEFA74 /* FullHouse.m in Sources */,
+				C38346A91598BFB00013F479 /* FourOfAKind.m in Sources */,
+				C38346AD1598C1540013F479 /* StraightFlush.m in Sources */,
+				C38346B01598C37A0013F479 /* LiarsPokerModel.m in Sources */,
+				C38CA2A415A7BC9400C36086 /* Deck.m in Sources */,
+				C3E50E1115B7ABE000F71BB4 /* CardPool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37B5DB8157922920052F51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5DCC157922920052F51D /* LiarsPokerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C37B5DC3157922920052F51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C37B5D90157922910052F51D /* LiarsPoker */;
+			targetProxy = C37B5DC2157922920052F51D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C37B5DA7157922910052F51D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37B5DA8157922910052F51D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C37B5DC7157922920052F51D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C37B5DC8157922920052F51D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C37B5DCD157922920052F51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C37B5DCE157922920052F51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C37B5DD0157922920052F51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiarsPoker/LiarsPoker-Prefix.pch";
+				INFOPLIST_FILE = "LiarsPoker/LiarsPoker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C37B5DD1157922920052F51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiarsPoker/LiarsPoker-Prefix.pch";
+				INFOPLIST_FILE = "LiarsPoker/LiarsPoker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C37B5DD3157922920052F51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiarsPoker.app/LiarsPoker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiarsPoker/LiarsPoker-Prefix.pch";
+				INFOPLIST_FILE = "LiarsPokerTests/LiarsPokerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C37B5DD4157922920052F51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiarsPoker.app/LiarsPoker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiarsPoker/LiarsPoker-Prefix.pch";
+				INFOPLIST_FILE = "LiarsPokerTests/LiarsPokerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C37B5D8B157922910052F51D /* Build configuration list for PBXProject "LiarsPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37B5DCD157922920052F51D /* Debug */,
+				C37B5DCE157922920052F51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37B5DCF157922920052F51D /* Build configuration list for PBXNativeTarget "LiarsPoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37B5DD0157922920052F51D /* Debug */,
+				C37B5DD1157922920052F51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37B5DD2157922920052F51D /* Build configuration list for PBXNativeTarget "LiarsPokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37B5DD3157922920052F51D /* Debug */,
+				C37B5DD4157922920052F51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C37B5D88157922910052F51D /* Project object */;
+}
